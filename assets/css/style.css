@@ -26,3 +26,15 @@
 .card{
     background-color: #219ebc;
 }
+
+.contacto{
+    background-color: black;
+}
+
+.contacto button{
+    background-color: #219ebc;
+}
+
+.contacto .mensaje-grande input{
+    height: 150px;
+}
