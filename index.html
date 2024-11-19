@@ -21,10 +21,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link active" href="#">Quienes Somos</a>
-          <a class="nav-link active" href="#">Destacados</a>
-          <a class="nav-link active" aria-disabled="true">Contacto</a>
+          <a class="nav-link active" href="#">Inicio</a>
+          <a class="nav-link active" href="#quienes-somos">Quienes Somos</a>
+          <a class="nav-link active" href="#destacados">Destacados</a>
+          <a class="nav-link active" href="#contacto">Contacto</a>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
     </button>
 </div>
 <!-- Quienes Somos Section -->
-<section class="quienes-somos">
+<section class="quienes-somos d-sm-none d-md-block" id="quienes-somos">
     <div class="container">
         <h2 class="text-center display-6 pt-5 pb-2">¿QUIÉNES SOMOS?</h2>
         <hr>
@@ -73,30 +73,30 @@
     </div> 
 </section>
 <!-- Destacados Section -->
-<section class="destacados">
+<section class="destacados" id="destacados">
     <div class="container">
         <h2 class="text-center display-6 pt-5 pb-2">DESTACADOS</h2>   
         <hr>
         <div class="row justify-content-between">
-            <div class="card col-3 p-0" style="width: 16rem;">
+            <div class="card col-10 col-sm-8 col-md-3 p-0" style="width: 16rem;">
                 <img src="assets/img/card1.jpg" class="card-img-top" alt="..." width="16" height="150">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 p-0" style="width: 16rem;">
+            <div class="card col-10 col-sm-8 col-md-3 p-0" style="width: 16rem;">
                 <img src="assets/img/card2.jpg" class="card-img-top" alt="..." width="16" height="150">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 p-0" style="width: 16rem;">
+            <div class="card col-10 col-sm-8 col-md-3 p-0" style="width: 16rem;">
                 <img src="assets/img/card3.jpg" class="card-img-top" alt="..." width="16" height="150">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 p-0" style="width: 16rem;">
+            <div class="card col-10 col-sm-8 col-md-3 p-0" style="width: 16rem;">
                 <img src="assets/img/card4.jpg" class="card-img-top" alt="..." width="16" height="150">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,7 +106,7 @@
     </div>
 </section>
 <!-- Contacto Section -->
-<section class="contacto pb-5">
+<section class="contacto pb-5" id="contacto">
     <div class="container">
         <h2 class="text-center display-6 pt-5 pb-2">CONTACTO</h2>
         <hr>
@@ -123,7 +123,9 @@
                 <label for="exampleInputEmail1" class="form-label">Mensaje</label>
                 <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="boton-mensaje" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Este boton es para enviar mensajes">Enviar</button>
         </form>
     </div>
 </section>
@@ -141,10 +143,10 @@
         </div>
     </div>
 </footer>
-<script src="assets/js/script.js"></script>
 <script src="https://kit.fontawesome.com/5f302662d9.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+<script src="assets/js/script.js"></script>
 </body>
 </html>

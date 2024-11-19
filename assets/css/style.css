@@ -6,6 +6,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar{
     background-image: url(../img/carousel1.jpg);
     background-size: cover;
